@@ -40,7 +40,7 @@ Starting from minimal starter code, this challenge required writing additional c
 [Click here for more license info!](https://choosealicense.com/licenses/mit/)
 
 ## Tests
-* tests can be run by entering by entering a sample note, confirming that it saves, and the user has the ability to continue to add additional sample notes.
+* tests can be run by entering by entering a sample note, confirming that it saves, and the user has the ability to continue to add additional sample notes.  delete function can additionally be tested by deleting any sample notes once saved.
 
 ## Questions
 * any questions, please feel free to reach out via email to rdpodols@gmail.com
