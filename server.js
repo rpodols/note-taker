@@ -34,7 +34,6 @@ app.post("/api/notes", function(req, res) {
     var newNote = req.body;
     newNote.id = uuid.v4()
     notes.push(newNote);
-    console.log(notes);
     fs.writeFile("db/db.json", JSON.stringify(notes), function(err) {
         if (err) {
         console.log(err);
@@ -46,33 +45,30 @@ app.post("/api/notes", function(req, res) {
 
 app.delete("/api/notes/:id", function (req, res){
     const noteDelete = req.params.id;
-    console.log(noteDelete);
     for(var i = 0; i < notes.length; i++){ 
-    
-        if ( notes[i].id === noteDelete) { 
-    
+        if (notes[i].id === noteDelete) { 
             notes.splice([i].id, 1); 
         }
-    
     }
-fs.writeFile("db/db.json", JSON.stringify(notes), function(err) {
-    if (err) {
-    console.log(err);
-    }
-    console.log("Success, note deleted!")
-});
-res.json(notes)
-});
-
-app.use("*", function(req, res) {
-    res.sendFile(path.join(__dirname, '/public/index.html'))
-})
-app.listen(PORT, () => {
-  console.log(`app listening @ http://localhost:${PORT}`)
-});
-
+    fs.writeFile("db/db.json", JSON.stringify(notes), function(err) {
+        if (err) {
+        console.log(err);
+        }
+        console.log("Success, note deleted!")
+    });
+    res.json(notes)
 });
 
 app.get('/api/notes/:id', function(req, res) {
     res.json(notes[req.params.id])
+});
+
+app.use("*", function(req, res) {
+    res.sendFile(path.join(__dirname, '/public/index.html'))
+});
+
+app.listen(PORT, () => {
+  console.log(`app listening @ http://localhost:${PORT}`)
+});
+
 });
