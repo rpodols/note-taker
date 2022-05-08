@@ -10,7 +10,7 @@ Starting from minimal starter code, this challenge required writing additional c
 * When I click on the link to the notes page, then I am presented with a page with existing notes listed in the left-hand column, plus empty fields to enter a new note title and the note's text in the right-hand column.
 * When I enter a new note title and the note's text, then a save icon appears in the navigation at the top of the page.
 * When I click on the Save icon, then the new note I have entered is saved and appears in the left-hand column with other existing notes.
-* When I click on an existing note in the list in th eleft-hand column, then that note appears in the right-hand column.
+* When I click on an existing note in the list in the left-hand column, then that note appears in the right-hand column.
 * When I click on the Write icon in the navigation at the top of the page, then I am presented with empty fields to enter a new note title and the note's text in the right-hand column.
 
 ## Table of Contents
@@ -46,9 +46,6 @@ Starting from minimal starter code, this challenge required writing additional c
 * any questions, please feel free to reach out via email to rdpodols@gmail.com
 
 ## Link to Project & Screenshot
-![Note Taker Screenshot)](/assets/images/applicationImage1.png)
-[Click here to view the project!](https://rpodols.github.io/team-profile-generator/)
+![Note Taker Screenshot)](/public/assets/images/applicationImage.png)
+[Click here to view the project!](https://murmuring-waters-72804.herokuapp.com)
 
-## Walkthrough Video
-* video walkthrough to show full capabilities of app:
-    - Click here: https://drive.google.com/file/d/1wFehtt0XUkfQXfDVKC2hUP5H0KcuKsB1/view
