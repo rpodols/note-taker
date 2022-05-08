@@ -46,8 +46,9 @@ app.post("/api/notes", function(req, res) {
 app.delete("/api/notes/:id", function (req, res){
     const noteDelete = req.params.id;
     for(var i = 0; i < notes.length; i++){ 
+        var noteIndex = notes.findIndex(obj => obj.id == noteDelete)
         if (notes[i].id === noteDelete) { 
-            notes.splice([i].id, 1); 
+            notes.splice(noteIndex, 1); 
         }
     }
     fs.writeFile("db/db.json", JSON.stringify(notes), function(err) {
