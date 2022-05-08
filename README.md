@@ -26,7 +26,7 @@ Starting from minimal starter code, this challenge required writing additional c
 * Node.js
 
 ## Installation
-* to install, clone the repository from GitHub, run the command 'npm i' while in the project directory, and then run 'node index' to launch the application within the terminal/command line
+* to install, clone the repository from GitHub, run the command 'npm i' while in the project directory, and then run 'npm start' to start the server within the terminal/command line.  in a web browser, open localhost:3001 to deploy the application locally.
 
 ## Usage
 * this can be used as an automated way to take and store notes
